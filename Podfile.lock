@@ -1,0 +1,28 @@
+PODS:
+  - ReSwift (4.0.1)
+  - RxSwift (4.3.1)
+  - SnapKit (4.0.1)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - ReSwift
+  - RxSwift
+  - SnapKit
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReSwift
+    - RxSwift
+    - SnapKit
+    - Then
+
+SPEC CHECKSUMS:
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: d99365ff3f05dce6432a59ec7f3b6bf30b3012db
+
+COCOAPODS: 1.5.3

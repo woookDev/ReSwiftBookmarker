@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AF088999F4DAE55E880E5C /* Pods_ReSwiftBookmarker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA8432FF527B4609C013EE1 /* Pods_ReSwiftBookmarker.framework */; };
+		53001E152183A36F002685C6 /* PDFBookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E142183A36F002685C6 /* PDFBookmarkViewController.swift */; };
+		53001E172183A3BA002685C6 /* PDFBookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E162183A3BA002685C6 /* PDFBookmarkTableViewCell.swift */; };
+		53001E192184B0B3002685C6 /* PDFDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E182184B0B3002685C6 /* PDFDetailViewModel.swift */; };
+		53001E1B21860ED2002685C6 /* PDFBookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E1A21860ED2002685C6 /* PDFBookmarkViewModel.swift */; };
+		53FE6FC0217C43D800A9699A /* PDFListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FBF217C43D800A9699A /* PDFListViewModel.swift */; };
+		53FE6FC2217C43F400A9699A /* PDFThumbnailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FC1217C43F400A9699A /* PDFThumbnailViewModel.swift */; };
+		53FE6FC6217C73B400A9699A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FC5217C73B400A9699A /* AppState.swift */; };
+		53FE6FCB217CA4F800A9699A /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FCA217CA4F800A9699A /* AppReducer.swift */; };
+		53FE6FCD217CC0BC00A9699A /* PDFListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FCC217CC0BC00A9699A /* PDFListState.swift */; };
+		53FE6FCF217CEAC000A9699A /* PDFDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FCE217CEAC000A9699A /* PDFDetail.swift */; };
+		53FE6FD1217CEB6A00A9699A /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FD0217CEB6A00A9699A /* Bookmark.swift */; };
+		53FE6FF5217E1B4900A9699A /* PDFThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FF4217E1B4900A9699A /* PDFThumbnailCollectionViewCell.swift */; };
+		53FE6FF7217E1D2300A9699A /* 1984.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 53FE6FF6217E1D2300A9699A /* 1984.pdf */; };
+		53FE6FF9217E1D2A00A9699A /* the-great-gatsby.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 53FE6FF8217E1D2A00A9699A /* the-great-gatsby.pdf */; };
+		53FE6FFD217E354500A9699A /* PDFDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FFC217E354500A9699A /* PDFDetailState.swift */; };
+		53FE6FFF217E395500A9699A /* PDFListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FFE217E395500A9699A /* PDFListAction.swift */; };
+		53FE7001217E39CE00A9699A /* PDFDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE7000217E39CE00A9699A /* PDFDetailAction.swift */; };
+		53FE7003217E3BC300A9699A /* PDFDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE7002217E3BC300A9699A /* PDFDetailReducer.swift */; };
+		53FE7005217E401300A9699A /* PDFListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE7004217E401300A9699A /* PDFListReducer.swift */; };
+		6C1DD208217334C3005AD963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1DD207217334C3005AD963 /* AppDelegate.swift */; };
+		6C1DD20A217334C3005AD963 /* PDFListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1DD209217334C3005AD963 /* PDFListViewController.swift */; };
+		6C1DD20D217334C3005AD963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1DD20B217334C3005AD963 /* Main.storyboard */; };
+		6C1DD20F217334C5005AD963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1DD20E217334C4005AD963 /* Assets.xcassets */; };
+		6C1DD212217334C5005AD963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1DD210217334C5005AD963 /* LaunchScreen.storyboard */; };
+		6C21C8D02174D15900DF0D2A /* PDFDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21C8CF2174D15900DF0D2A /* PDFDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C7F81170ED2D86DDCC935B /* Pods-ReSwiftBookmarker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftBookmarker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftBookmarker/Pods-ReSwiftBookmarker.debug.xcconfig"; sourceTree = "<group>"; };
+		53001E142183A36F002685C6 /* PDFBookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBookmarkViewController.swift; sourceTree = "<group>"; };
+		53001E162183A3BA002685C6 /* PDFBookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		53001E182184B0B3002685C6 /* PDFDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailViewModel.swift; sourceTree = "<group>"; };
+		53001E1A21860ED2002685C6 /* PDFBookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBookmarkViewModel.swift; sourceTree = "<group>"; };
+		53FE6FBF217C43D800A9699A /* PDFListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListViewModel.swift; sourceTree = "<group>"; };
+		53FE6FC1217C43F400A9699A /* PDFThumbnailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFThumbnailViewModel.swift; sourceTree = "<group>"; };
+		53FE6FC5217C73B400A9699A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		53FE6FCA217CA4F800A9699A /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		53FE6FCC217CC0BC00A9699A /* PDFListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListState.swift; sourceTree = "<group>"; };
+		53FE6FCE217CEAC000A9699A /* PDFDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetail.swift; sourceTree = "<group>"; };
+		53FE6FD0217CEB6A00A9699A /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		53FE6FF4217E1B4900A9699A /* PDFThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		53FE6FF6217E1D2300A9699A /* 1984.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1984.pdf; sourceTree = "<group>"; };
+		53FE6FF8217E1D2A00A9699A /* the-great-gatsby.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "the-great-gatsby.pdf"; sourceTree = "<group>"; };
+		53FE6FFC217E354500A9699A /* PDFDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailState.swift; sourceTree = "<group>"; };
+		53FE6FFE217E395500A9699A /* PDFListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListAction.swift; sourceTree = "<group>"; };
+		53FE7000217E39CE00A9699A /* PDFDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailAction.swift; sourceTree = "<group>"; };
+		53FE7002217E3BC300A9699A /* PDFDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailReducer.swift; sourceTree = "<group>"; };
+		53FE7004217E401300A9699A /* PDFListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListReducer.swift; sourceTree = "<group>"; };
+		628C944D4C9E06BD9D9F867B /* Pods-ReSwiftBookmarker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftBookmarker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftBookmarker/Pods-ReSwiftBookmarker.release.xcconfig"; sourceTree = "<group>"; };
+		6C1DD204217334C3005AD963 /* ReSwiftBookmarker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftBookmarker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1DD207217334C3005AD963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C1DD209217334C3005AD963 /* PDFListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListViewController.swift; sourceTree = "<group>"; };
+		6C1DD20C217334C3005AD963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C1DD20E217334C4005AD963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C1DD211217334C5005AD963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C1DD213217334C5005AD963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C21C8CF2174D15900DF0D2A /* PDFDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailViewController.swift; sourceTree = "<group>"; };
+		AEA8432FF527B4609C013EE1 /* Pods_ReSwiftBookmarker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftBookmarker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C1DD201217334C3005AD963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF088999F4DAE55E880E5C /* Pods_ReSwiftBookmarker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E1641EB7F4F9D02DE7337AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06C7F81170ED2D86DDCC935B /* Pods-ReSwiftBookmarker.debug.xcconfig */,
+				628C944D4C9E06BD9D9F867B /* Pods-ReSwiftBookmarker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		530B3B452190621200200A12 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FF3217E1B1C00A9699A /* View */,
+				6C1DD209217334C3005AD963 /* PDFListViewController.swift */,
+				6C21C8CF2174D15900DF0D2A /* PDFDetailViewController.swift */,
+				53001E142183A36F002685C6 /* PDFBookmarkViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		530B3B462190622700200A12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C1DD20E217334C4005AD963 /* Assets.xcassets */,
+				53FE6FF8217E1D2A00A9699A /* the-great-gatsby.pdf */,
+				53FE6FF6217E1D2300A9699A /* 1984.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53FE6FBE217C43C600A9699A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FBF217C43D800A9699A /* PDFListViewModel.swift */,
+				53FE6FC1217C43F400A9699A /* PDFThumbnailViewModel.swift */,
+				53001E182184B0B3002685C6 /* PDFDetailViewModel.swift */,
+				53001E1A21860ED2002685C6 /* PDFBookmarkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53FE6FC4217C713700A9699A /* State */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FC5217C73B400A9699A /* AppState.swift */,
+				53FE6FCC217CC0BC00A9699A /* PDFListState.swift */,
+				53FE6FFC217E354500A9699A /* PDFDetailState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		53FE6FC9217C94FC00A9699A /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FCA217CA4F800A9699A /* AppReducer.swift */,
+				53FE7002217E3BC300A9699A /* PDFDetailReducer.swift */,
+				53FE7004217E401300A9699A /* PDFListReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		53FE6FF3217E1B1C00A9699A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FF4217E1B4900A9699A /* PDFThumbnailCollectionViewCell.swift */,
+				53001E162183A3BA002685C6 /* PDFBookmarkTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C1DD1FB217334C3005AD963 = {
+			isa = PBXGroup;
+			children = (
+				6C1DD206217334C3005AD963 /* ReSwiftBookmarker */,
+				6C1DD205217334C3005AD963 /* Products */,
+				0E1641EB7F4F9D02DE7337AE /* Pods */,
+				B0FE91600324B9F09F5828E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C1DD205217334C3005AD963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C1DD204217334C3005AD963 /* ReSwiftBookmarker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C1DD206217334C3005AD963 /* ReSwiftBookmarker */ = {
+			isa = PBXGroup;
+			children = (
+				6C1DD207217334C3005AD963 /* AppDelegate.swift */,
+				530B3B462190622700200A12 /* Resources */,
+				530B3B452190621200200A12 /* ViewControllers */,
+				53FE6FC9217C94FC00A9699A /* Reducer */,
+				53FE6FC4217C713700A9699A /* State */,
+				53FE6FBE217C43C600A9699A /* ViewModel */,
+				6C1DD24521738CBE005AD963 /* Actions */,
+				6C1DD24421738CAD005AD963 /* Model */,
+				6C1DD20B217334C3005AD963 /* Main.storyboard */,
+				6C1DD210217334C5005AD963 /* LaunchScreen.storyboard */,
+				6C1DD213217334C5005AD963 /* Info.plist */,
+			);
+			path = ReSwiftBookmarker;
+			sourceTree = "<group>";
+		};
+		6C1DD24421738CAD005AD963 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FCE217CEAC000A9699A /* PDFDetail.swift */,
+				53FE6FD0217CEB6A00A9699A /* Bookmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C1DD24521738CBE005AD963 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				53FE6FFE217E395500A9699A /* PDFListAction.swift */,
+				53FE7000217E39CE00A9699A /* PDFDetailAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		B0FE91600324B9F09F5828E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8432FF527B4609C013EE1 /* Pods_ReSwiftBookmarker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C1DD203217334C3005AD963 /* ReSwiftBookmarker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1DD216217334C5005AD963 /* Build configuration list for PBXNativeTarget "ReSwiftBookmarker" */;
+			buildPhases = (
+				0EA59EA5907F3C066597A73D /* [CP] Check Pods Manifest.lock */,
+				6C1DD200217334C3005AD963 /* Sources */,
+				6C1DD201217334C3005AD963 /* Frameworks */,
+				6C1DD202217334C3005AD963 /* Resources */,
+				B3199FC33D7796CC4BB18E7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSwiftBookmarker;
+			productName = ReSwiftBookmarker;
+			productReference = 6C1DD204217334C3005AD963 /* ReSwiftBookmarker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C1DD1FC217334C3005AD963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "황재욱";
+				TargetAttributes = {
+					6C1DD203217334C3005AD963 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 6C1DD1FF217334C3005AD963 /* Build configuration list for PBXProject "ReSwiftBookmarker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C1DD1FB217334C3005AD963;
+			productRefGroup = 6C1DD205217334C3005AD963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1DD203217334C3005AD963 /* ReSwiftBookmarker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C1DD202217334C3005AD963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FE6FF9217E1D2A00A9699A /* the-great-gatsby.pdf in Resources */,
+				53FE6FF7217E1D2300A9699A /* 1984.pdf in Resources */,
+				6C1DD212217334C5005AD963 /* LaunchScreen.storyboard in Resources */,
+				6C1DD20F217334C5005AD963 /* Assets.xcassets in Resources */,
+				6C1DD20D217334C3005AD963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA59EA5907F3C066597A73D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReSwiftBookmarker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3199FC33D7796CC4BB18E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftBookmarker/Pods-ReSwiftBookmarker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftBookmarker/Pods-ReSwiftBookmarker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C1DD200217334C3005AD963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53001E152183A36F002685C6 /* PDFBookmarkViewController.swift in Sources */,
+				53FE6FCD217CC0BC00A9699A /* PDFListState.swift in Sources */,
+				53FE6FC2217C43F400A9699A /* PDFThumbnailViewModel.swift in Sources */,
+				6C1DD20A217334C3005AD963 /* PDFListViewController.swift in Sources */,
+				53FE7005217E401300A9699A /* PDFListReducer.swift in Sources */,
+				53FE6FC6217C73B400A9699A /* AppState.swift in Sources */,
+				53FE6FCB217CA4F800A9699A /* AppReducer.swift in Sources */,
+				53FE6FFF217E395500A9699A /* PDFListAction.swift in Sources */,
+				53FE6FFD217E354500A9699A /* PDFDetailState.swift in Sources */,
+				53001E1B21860ED2002685C6 /* PDFBookmarkViewModel.swift in Sources */,
+				53FE6FCF217CEAC000A9699A /* PDFDetail.swift in Sources */,
+				53FE6FC0217C43D800A9699A /* PDFListViewModel.swift in Sources */,
+				53001E172183A3BA002685C6 /* PDFBookmarkTableViewCell.swift in Sources */,
+				53FE6FF5217E1B4900A9699A /* PDFThumbnailCollectionViewCell.swift in Sources */,
+				53FE7001217E39CE00A9699A /* PDFDetailAction.swift in Sources */,
+				53001E192184B0B3002685C6 /* PDFDetailViewModel.swift in Sources */,
+				6C21C8D02174D15900DF0D2A /* PDFDetailViewController.swift in Sources */,
+				6C1DD208217334C3005AD963 /* AppDelegate.swift in Sources */,
+				53FE7003217E3BC300A9699A /* PDFDetailReducer.swift in Sources */,
+				53FE6FD1217CEB6A00A9699A /* Bookmark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C1DD20B217334C3005AD963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1DD20C217334C3005AD963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C1DD210217334C5005AD963 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1DD211217334C5005AD963 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C1DD214217334C5005AD963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C1DD215217334C5005AD963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C1DD217217334C5005AD963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C7F81170ED2D86DDCC935B /* Pods-ReSwiftBookmarker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReSwiftBookmarker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaewook.ReSwiftBookmarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C1DD218217334C5005AD963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628C944D4C9E06BD9D9F867B /* Pods-ReSwiftBookmarker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReSwiftBookmarker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaewook.ReSwiftBookmarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C1DD1FF217334C3005AD963 /* Build configuration list for PBXProject "ReSwiftBookmarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1DD214217334C5005AD963 /* Debug */,
+				6C1DD215217334C5005AD963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1DD216217334C5005AD963 /* Build configuration list for PBXNativeTarget "ReSwiftBookmarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1DD217217334C5005AD963 /* Debug */,
+				6C1DD218217334C5005AD963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C1DD1FC217334C3005AD963 /* Project object */;
+}
