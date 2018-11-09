@@ -12,6 +12,7 @@
 		53001E172183A3BA002685C6 /* PDFBookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E162183A3BA002685C6 /* PDFBookmarkTableViewCell.swift */; };
 		53001E192184B0B3002685C6 /* PDFDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E182184B0B3002685C6 /* PDFDetailViewModel.swift */; };
 		53001E1B21860ED2002685C6 /* PDFBookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53001E1A21860ED2002685C6 /* PDFBookmarkViewModel.swift */; };
+		53282D5D21957739002AFB0D /* RxObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53282D5C21957739002AFB0D /* RxObserver.swift */; };
 		53FE6FC0217C43D800A9699A /* PDFListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FBF217C43D800A9699A /* PDFListViewModel.swift */; };
 		53FE6FC2217C43F400A9699A /* PDFThumbnailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FC1217C43F400A9699A /* PDFThumbnailViewModel.swift */; };
 		53FE6FC6217C73B400A9699A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE6FC5217C73B400A9699A /* AppState.swift */; };
@@ -41,6 +42,7 @@
 		53001E162183A3BA002685C6 /* PDFBookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		53001E182184B0B3002685C6 /* PDFDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailViewModel.swift; sourceTree = "<group>"; };
 		53001E1A21860ED2002685C6 /* PDFBookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBookmarkViewModel.swift; sourceTree = "<group>"; };
+		53282D5C21957739002AFB0D /* RxObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxObserver.swift; sourceTree = "<group>"; };
 		53FE6FBF217C43D800A9699A /* PDFListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListViewModel.swift; sourceTree = "<group>"; };
 		53FE6FC1217C43F400A9699A /* PDFThumbnailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFThumbnailViewModel.swift; sourceTree = "<group>"; };
 		53FE6FC5217C73B400A9699A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		53282D5B21957722002AFB0D /* ReSwift+RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				53282D5C21957739002AFB0D /* RxObserver.swift */,
+			);
+			path = "ReSwift+RxSwift";
+			sourceTree = "<group>";
+		};
 		53FE6FBE217C43C600A9699A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		6C1DD206217334C3005AD963 /* ReSwiftBookmarker */ = {
 			isa = PBXGroup;
 			children = (
+				53282D5B21957722002AFB0D /* ReSwift+RxSwift */,
 				6C1DD207217334C3005AD963 /* AppDelegate.swift */,
 				530B3B462190622700200A12 /* Resources */,
 				530B3B452190621200200A12 /* ViewControllers */,
@@ -343,6 +354,7 @@
 				53001E152183A36F002685C6 /* PDFBookmarkViewController.swift in Sources */,
 				53FE6FCD217CC0BC00A9699A /* PDFListState.swift in Sources */,
 				53FE6FC2217C43F400A9699A /* PDFThumbnailViewModel.swift in Sources */,
+				53282D5D21957739002AFB0D /* RxObserver.swift in Sources */,
 				6C1DD20A217334C3005AD963 /* PDFListViewController.swift in Sources */,
 				53FE7005217E401300A9699A /* PDFListReducer.swift in Sources */,
 				53FE6FC6217C73B400A9699A /* AppState.swift in Sources */,

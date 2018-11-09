@@ -68,8 +68,9 @@ extension PDFListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PDFThumbnailCollectionViewCell.self), for: indexPath) as! PDFThumbnailCollectionViewCell
         let data = self.pdfListViewModel.pdfThumbnailViewModels[indexPath.item]
-        cell.pdfThumbnailImageView.image = data.thumbnailImage
-        cell.progressBar.setProgress(Float(data.progressLevel), animated: true)
+      
+        cell.configure(thumbnailImage: data.thumbnailImage, progressLevel: Float(data.progressLevel))
+        
         return cell
     }
     

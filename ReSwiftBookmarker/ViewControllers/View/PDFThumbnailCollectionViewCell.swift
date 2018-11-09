@@ -31,6 +31,12 @@ class PDFThumbnailCollectionViewCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     
+    func configure(thumbnailImage: UIImage, progressLevel: Float) {
+        self.pdfThumbnailImageView.image = thumbnailImage
+        self.progressBar.setProgress(progressLevel, animated: true)
+    }
+    
+    
     func viewInitConfigure() {
         
         self.do {
